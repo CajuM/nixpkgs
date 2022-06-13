@@ -122,6 +122,8 @@
   ./misc/version.nix
   ./misc/wordlist.nix
   ./misc/nixops-autoluks.nix
+  ./services/openstack/keystone.nix
+  ./services/openstack/nova-controller.nix
   ./programs/_1password.nix
   ./programs/_1password-gui.nix
   ./programs/adb.nix

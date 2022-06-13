@@ -20475,6 +20475,8 @@ with pkgs;
 
   openstackclient = with python3Packages; toPythonApplication python-openstackclient;
 
+  openstackPkgs = callPackage ../development/python-modules/openstack { };
+
   openvdb = callPackage ../development/libraries/openvdb {};
 
   inherit (callPackages ../development/libraries/libressl { })

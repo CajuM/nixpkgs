@@ -1,0 +1,8 @@
+#!/usr/bin/env nix-shell
+#! nix-shell --pure -i bash -p nix -p poetry -p python3
+
+set -eu
+
+rm -f pyproject.toml poetry.lock
+./gen_pyproject.py yoga >pyproject.toml
+poetry lock
